@@ -1,0 +1,482 @@
+
+/* =================================
+   ESTILO GENERAL
+================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #11152B;
+    color: #F1E8D5;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.8;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.3;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* =================================
+   ENCABEZADO
+================================= */
+
+.encabezado {
+    background-color: #17162F;
+    text-align: center;
+    padding: 30px 7%;
+    border-bottom: 1px solid #A9A9BC;
+}
+
+.logo {
+    color: #E8D9B9;
+    font-size: 25px;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+}
+
+.frase-encabezado {
+    color: #C5BED2;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.menu a {
+    color: #E8D9B9;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #C8B58E;
+}
+
+
+/* =================================
+   PRESENTACIÓN PRINCIPAL
+================================= */
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 80px 9%;
+    background-color: #1B1A39;
+}
+
+.contenido-presentacion {
+    flex: 1.2;
+}
+
+.imagen-presentacion {
+    flex: 1;
+}
+
+.imagen-presentacion img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border: 2px solid #A9A9BC;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.presentacion h1 {
+    font-size: 40px;
+    color: #F1E8D5;
+    margin-bottom: 20px;
+}
+
+.presentacion p {
+    color: #D8D1E2;
+}
+
+
+/* =================================
+   TEXTOS Y SUBTÍTULOS
+================================= */
+
+.subtitulo {
+    color: #C8B58E;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.seccion {
+    padding: 75px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    border-bottom: 1px solid #55536D;
+}
+
+.texto-seccion {
+    flex: 1.3;
+}
+
+.texto-seccion h2 {
+    color: #E8D9B9;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.texto-seccion p {
+    color: #D8D1E2;
+}
+
+.texto-destacado {
+    color: #E8D9B9 !important;
+    border-left: 2px solid #C8B58E;
+    padding-left: 18px;
+    font-style: italic;
+}
+
+
+/* =================================
+   IMÁGENES DE LAS SECCIONES
+================================= */
+
+.imagen-seccion {
+    flex: 1;
+}
+
+.imagen-seccion img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border: 1px solid #A9A9BC;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+
+/* =================================
+   BOTONES Y ENLACES
+================================= */
+
+.boton {
+    display: inline-block;
+    background-color: transparent;
+    color: #E8D9B9;
+    text-decoration: none;
+    border: 1px solid #C8B58E;
+    padding: 12px 25px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #C8B58E;
+    color: #17162F;
+}
+
+.enlace {
+    color: #D9C18B;
+    text-decoration: none;
+    border-bottom: 1px solid #C8B58E;
+}
+
+.enlace:hover {
+    color: #F1E8D5;
+}
+
+
+/* =================================
+   TARJETAS DE DESAFÍOS
+================================= */
+
+.desafios {
+    background-color: #1B1A39;
+    text-align: center;
+    flex-direction: column;
+}
+
+.desafios .texto-seccion {
+    max-width: 750px;
+}
+
+.lista-desafios {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.tarjeta {
+    background-color: #24203F;
+    padding: 30px;
+    border: 1px solid #77758D;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    border-color: #C8B58E;
+}
+
+.tarjeta span {
+    color: #C8B58E;
+    letter-spacing: 2px;
+}
+
+.tarjeta h3 {
+    color: #E8D9B9;
+    margin: 12px 0;
+}
+
+.tarjeta p {
+    color: #D8D1E2;
+    font-size: 14px;
+}
+
+.nota-desafios {
+    max-width: 700px;
+    color: #D8D1E2;
+    margin-top: 15px;
+}
+
+
+/* =================================
+   FRASE DESTACADA
+================================= */
+
+.frase-destacada {
+    text-align: center;
+    padding: 70px 10%;
+    background-color: #17162F;
+    border-top: 1px solid #A9A9BC;
+    border-bottom: 1px solid #A9A9BC;
+}
+
+.frase-destacada h2 {
+    color: #E8D9B9;
+    font-size: 32px;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.frase-destacada p {
+    color: #D8D1E2;
+}
+
+.adorno {
+    color: #C8B58E;
+    font-size: 23px;
+    letter-spacing: 7px;
+}
+
+
+/* =================================
+   VERSÍCULOS BÍBLICOS
+================================= */
+
+.versiculos {
+    background-color: #11152B;
+    padding: 75px 10%;
+    text-align: center;
+}
+
+.titulo-versiculos {
+    max-width: 750px;
+    margin: 0 auto 40px;
+}
+
+.titulo-versiculos h2 {
+    color: #E8D9B9;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.titulo-versiculos p {
+    color: #D8D1E2;
+}
+
+.contenedor-versiculos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.versiculo {
+    background-color: #1B1A39;
+    border: 1px solid #77758D;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.versiculo:hover {
+    border-color: #C8B58E;
+    transform: translateY(-4px);
+}
+
+.numero {
+    color: #C8B58E;
+    letter-spacing: 3px;
+}
+
+.versiculo h3 {
+    color: #E8D9B9;
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.versiculo blockquote {
+    color: #F1E8D5;
+    font-size: 15px;
+    font-style: italic;
+    border-top: 1px solid #77758D;
+    padding-top: 15px;
+}
+
+.cierre-versiculos {
+    max-width: 750px;
+    margin: 55px auto 0;
+    padding: 35px 20px;
+    border-top: 1px solid #A9A9BC;
+    border-bottom: 1px solid #A9A9BC;
+}
+
+.cierre-versiculos h2 {
+    color: #E8D9B9;
+    margin: 15px 0;
+}
+
+.cierre-versiculos p {
+    color: #D8D1E2;
+}
+
+.cierre-versiculos span {
+    color: #C8B58E;
+    font-size: 24px;
+}
+
+
+/* =================================
+   PIE DE PÁGINA
+================================= */
+
+.pie {
+    background-color: #0D1021;
+    padding: 40px 15px;
+    text-align: center;
+    border-top: 1px solid #A9A9BC;
+}
+
+.logo-pie {
+    color: #E8D9B9 !important;
+    letter-spacing: 3px;
+    font-size: 19px;
+}
+
+.pie p {
+    color: #D8D1E2;
+}
+
+.creditos {
+    color: #A9A9BC !important;
+    font-size: 13px;
+}
+
+.enlaces-pie {
+    margin-top: 15px;
+}
+
+.enlaces-pie a {
+    color: #C8B58E;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.enlaces-pie a:hover {
+    color: #F1E8D5;
+}
+
+.decoracion-pie {
+    color: #C8B58E !important;
+    letter-spacing: 7px;
+    margin-top: 20px;
+}
+
+
+/* =================================
+   DISEÑO PARA CELULARES
+================================= */
+
+@media (max-width: 750px) {
+
+    .presentacion,
+    .seccion {
+        flex-direction: column;
+        padding: 45px 7%;
+    }
+
+    .presentacion {
+        text-align: center;
+    }
+
+    .presentacion h1 {
+        font-size: 30px;
+    }
+
+    .imagen-presentacion img {
+        height: 250px;
+    }
+
+    .imagen-seccion img {
+        height: 230px;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    .lista-desafios,
+    .contenedor-versiculos {
+        grid-template-columns: 1fr;
+    }
+
+    .frase-destacada h2 {
+        font-size: 25px;
+    }
+
+    .titulo-versiculos h2 {
+        font-size: 26px;
+    }
+}

@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Comunidad y contacto | Haz cosas difíciles</title>
+
+    <!-- Conexión con el archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER: encabezado de la página -->
+    <header class="encabezado">
+
+        <div class="logo">
+            ✧ HAZ COSAS DIFÍCILES ✧
+        </div>
+
+        <p class="frase-encabezado">
+            Tu historia también puede inspirar a alguien.
+        </p>
+
+        <!-- NAV: menú de navegación -->
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="proposito.html">Dios tiene un propósito</a>
+            <a href="contacto.html">Comunidad y contacto</a>
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN: contenido principal -->
+    <main>
+
+        <!-- SECTION: presentación del formulario -->
+        <section class="introduccion-contacto">
+
+            <p class="subtitulo">✦ UN ESPACIO PARA COMPARTIR ✦</p>
+
+            <h1>¡Tu historia también importa!</h1>
+
+            <p>
+                Todos tenemos desafíos, sueños y experiencias
+                que nos ayudan a crecer. Me gustaría conocer
+                un poquito de tu historia.
+            </p>
+
+            <p>
+                Comparte tus pensamientos, cuéntame qué cosas
+                difíciles te gustaría enfrentar y qué mensaje
+                te ha animado a seguir adelante.
+            </p>
+
+            <span class="estrellas-contacto">✧ ⋆ ✦ ⋆ ✧</span>
+
+        </section>
+
+
+        <!-- SECTION: formulario de contacto -->
+        <section class="seccion-formulario">
+
+            <div class="formulario-contenedor">
+
+                <h2>Comparte tu historia</h2>
+
+                <p class="texto-formulario">
+                    Completa los siguientes campos.
+                    ¡Me encantará conocer tu reflexión!
+                </p>
+
+                <form id="formulario-contacto">
+
+                    <!-- Campo de nombre -->
+                    <div class="campo">
+                        <label for="nombre">
+                            Nombre:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Escribe tu nombre"
+                            required
+                        >
+                    </div>
+
+
+                    <!-- Campo de correo -->
+                    <div class="campo">
+                        <label for="correo">
+                            Correo electrónico:
+                        </label>
+
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="ejemplo@correo.com"
+                            required
+                        >
+                    </div>
+
+
+                    <!-- Campo de edad -->
+                    <div class="campo">
+                        <label for="edad">
+                            Edad (opcional):
+                        </label>
+
+                        <input
+                            type="number"
+                            id="edad"
+                            name="edad"
+                            min="10"
+                            max="100"
+                            placeholder="¿Cuántos años tienes?"
+                        >
+                    </div>
+
+
+                    <!-- Selección de tema -->
+                    <div class="campo">
+                        <label for="tema">
+                            ¿Qué te gustaría compartir?
+                        </label>
+
+                        <select id="tema" name="tema" required>
+
+                            <option value="">
+                                Selecciona un tema
+                            </option>
+
+                            <option value="reflexion">
+                                Una reflexión personal
+                            </option>
+
+                            <option value="desafio">
+                                Un desafío que quiero superar
+                            </option>
+
+                            <option value="proposito">
+                                Mi propósito y mi fe
+                            </option>
+
+                            <option value="libro">
+                                Mi opinión sobre el libro
+                            </option>
+
+                            <option value="pregunta">
+                                Una pregunta o inquietud
+                            </option>
+
+                        </select>
+                    </div>
+
+
+                    <!-- Campo de reflexión -->
+                    <div class="campo">
+                        <label for="mensaje">
+                            Cuéntame tu reflexión:
+                        </label>
+
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="5"
+                            placeholder="Escribe aquí lo que quieras compartir..."
+                            required
+                        ></textarea>
+                    </div>
+
+
+                    <!-- Campo de desafío personal -->
+                    <div class="campo">
+                        <label for="desafio">
+                            ¿Qué cosa difícil te gustaría atreverte a hacer?
+                        </label>
+
+                        <textarea
+                            id="desafio"
+                            name="desafio"
+                            rows="3"
+                            placeholder="Cuéntame cuál es ese reto que quieres alcanzar..."
+                        ></textarea>
+                    </div>
+
+
+                    <!-- Casilla de confirmación -->
+                    <div class="campo-checkbox">
+
+                        <input
+                            type="checkbox"
+                            id="aceptar"
+                            name="aceptar"
+                            required
+                        >
+
+                        <label for="aceptar">
+                            Confirmo que deseo compartir esta información.
+                        </label>
+
+                    </div>
+
+
+                    <!-- Botón para enviar -->
+                    <button type="submit" class="boton-enviar">
+                        Enviar mi reflexión ✧
+                    </button>
+
+                    <!-- Mensaje de confirmación -->
+                    <p id="respuesta-formulario" aria-live="polite"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECTION: mensaje motivador -->
+        <section class="mensaje-contacto">
+
+            <span>✦</span>
+
+            <h2>Recuerda que no estás solo.</h2>
+
+            <p>
+                Cada persona tiene su propio proceso.
+                No tengas miedo de aprender, equivocarte
+                y volver a intentarlo. Tu juventud también
+                es una oportunidad para crecer y descubrir
+                todo lo que Dios puede hacer en tu vida.
+            </p>
+
+            <span>✧ ⋆ ✦ ⋆ ✧</span>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER: pie de página -->
+    <footer class="pie">
+
+        <p class="logo-pie">
+            ✧ HAZ COSAS DIFÍCILES ✧
+        </p>
+
+        <p>
+            Crecer, creer y atreverse a hacer cosas difíciles.
+        </p>
+
+        <p class="creditos">
+            Proyecto de Desarrollo Web
+        </p>
+
+        <p class="creditos">
+            Creado por Gabriela Morales
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript: interacción del formulario -->
+    <script>
+
+        const formulario = document.getElementById(
+            "formulario-contacto"
+        );
+
+        const respuesta = document.getElementById(
+            "respuesta-formulario"
+        );
+
+        formulario.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const nombre = document.getElementById("nombre").value;
+
+            respuesta.textContent =
+                "¡Gracias, " + nombre +
+                "! Tu reflexión ha sido registrada en esta demostración. ✨";
+
+            formulario.reset();
+
+        });
+
+    </script>
+
+</body>
+</html>
